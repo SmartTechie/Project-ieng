@@ -1,5 +1,6 @@
 # Hierarchical Clustering
-
+set.seed (2)
+x=matrix(rnorm(50*2), ncol=2)
 hc.complete=hclust(dist(x), method="complete")
 hc.average=hclust(dist(x), method="average")
 hc.single=hclust(dist(x), method="single")
